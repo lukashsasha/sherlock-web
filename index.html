@@ -32,6 +32,13 @@
       // Modify or remove this function to customize the visually presented
       // way that non-critical warnings and error messages are presented to the
       // user.
+
+      window.onload=function(){ 
+        setTimeout(function(){
+          window.scrollTo(0, 1); 	
+        }, 1000); 
+      }
+
       function unityShowBanner(msg, type) {
         function updateBannerVisibility() {
           warningBanner.style.display = warningBanner.children.length ? 'block' : 'none';
